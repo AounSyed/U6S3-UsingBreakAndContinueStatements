@@ -7,12 +7,14 @@ public class CountChar {
         int max = str.length();
         int count = 0;
 
-//            if (str.charAt(i) != 'w')
-//                continue;
+        int i = 0;
+        do
+        {
+            i++;
+            count++;
+        }while (str.charAt(i) == 'w');
 
-        count++;
-
-       str += ("Counting w : " + count );
+        str += (" Counting w : " + count);
         return str;
     }
 

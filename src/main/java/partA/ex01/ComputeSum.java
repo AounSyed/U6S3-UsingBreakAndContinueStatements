@@ -1,26 +1,28 @@
 package partA.ex01;
-
+import java.util.Scanner;
 public class ComputeSum {
 
-    public static String computeSum() {
-        String response = "";
+    public static int computeSum() {
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
 
-        /**
-         * Your code goes here
-         */
+        for (int i = 1; i <= 10; i++) {
+            System.out.print("Enter number " + i + ": ");
+            int num = scanner.nextInt();
 
+            if (num == 0) {
+                break;
+            }
 
+            sum += num;
+        }
 
-        return response;
+        return sum;
     }
 
     public static void main(String[] args) {
-        String sum = computeSum();
+        int sum = computeSum();
         System.out.print(sum);
     }
-
-
-
-
     }
 
