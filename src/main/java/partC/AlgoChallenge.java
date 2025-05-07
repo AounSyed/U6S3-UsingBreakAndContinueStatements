@@ -17,8 +17,16 @@ public class AlgoChallenge {
      */
 
     public static Boolean multipleOf(int number){
+        boolean response = false;
 
-        return null;
+        for (int i = 0; i <= 10; i++) {
+            if (number < 0)
+                break;
+
+            if (number % 5 == 0 || number % 3 == 0)
+                response = true;
+        }
+        return response;
     }
 
 
@@ -36,8 +44,18 @@ public class AlgoChallenge {
      */
 
     public static Boolean checkTemp(int temp1, int temp2) {
+        boolean response = false;
 
-        return null;
+        for (int i = 0; i <= 1; i++){
+            if (temp2 > 0 && temp2 < 100 || temp1 > 0 && temp1 < 100)
+                break;
+
+            if (temp1 < 0 && temp2 > 100 || temp2 < 0 && temp1 > 100)
+                response = true;
+        }
+
+
+        return response;
     }
 
 }

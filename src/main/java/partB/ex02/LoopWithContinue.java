@@ -3,13 +3,13 @@ package partB.ex02;
 public class LoopWithContinue {
     public static String loopWithContinue() {
         String response = "";
-
-        /**
-         * Your code goes here
-         */
-
-
-
+        for (int i = 1; i < 11; i++)
+        {
+            if (i > 4 && i < 9) {
+                continue;
+            }
+            System.out.println(i);
+        }
         return response;
     }
 
